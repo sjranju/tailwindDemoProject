@@ -12,7 +12,7 @@
             <div class="pt-2">
                 <img src="./img/logo.svg" alt="logo">
             </div>
-            <div class="hidden sm:flex space-x-6">
+            <div class="hidden flex-col md:flex md:flex-row space-x-6">
                 <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
                 <a href="#" class="hover:text-darkGrayishBlue">Product</a>
                 <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
@@ -22,6 +22,21 @@
             <a href="#"
                 class="hidden p-3 px-4 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight md:block">Get
                 Started</a>
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute hidden flex-col items-center self-end py-8 mt-10 left-6 right-6 space-y-6 font-bold bg-white sm:w-auto">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
         </div>
     </nav>
     <section id="hero">
@@ -169,8 +184,7 @@
                 Simplify how your team works today.
             </h1>
             <div>
-                <a href="#"
-                    class="p-3 px-5 py-2 bg-white text-brightRed rounded-full hover:bg-brightRedSupLight">
+                <a href="#" class="p-3 px-5 py-2 bg-white text-brightRed rounded-full hover:bg-brightRedSupLight">
                     Get Started</a>
             </div>
         </div>
@@ -189,7 +203,8 @@
                     <img src="./img/icon-instagram.svg" alt="">
                 </div>
                 <div>
-                    <p class="mx-auto my-6 text-center text-darkGrayishBlue text-sm md:hidden">Copyright 2022. All Rights Reserved</p>
+                    <p class="mx-auto my-6 text-center text-darkGrayishBlue text-sm md:hidden">Copyright 2022. All
+                        Rights Reserved</p>
                 </div>
                 <!-- </div> -->
 
@@ -221,9 +236,7 @@
                 </div>
             </div>
         </div>
-
     </section>
-
+    <script src="src/hamburgerScript.js"></script>
 </body>
-
 </html>

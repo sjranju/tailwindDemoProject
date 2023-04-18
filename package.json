@@ -1,9 +1,12 @@
 {
+  "homepage": "https://sjranju.github.io/tailwindDemoProject",
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
